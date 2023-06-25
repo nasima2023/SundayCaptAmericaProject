@@ -1,4 +1,4 @@
-package upskill.ebay.stepDef;
+ package upskill.ebay.stepDef;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -25,4 +25,32 @@ public class EbaySearchResultSteps {
 		EbaySearchResultActionsObj.verifyBrandItems(brand);
 		Thread.sleep(2000);
 	}
+	
+	/*@When("^Filter by \"([^\"]*)\"$")
+	public void filter_by(String Brand) throws Throwable {
+		EbaySearchResultActionsObj.filterBrand( Brand);
+			}
+	@Then("^Item list should have products of \"([^\"]*)\"$")
+	public void item_list_should_have_products_of(String Brand) throws Throwable {
+		 EbaySearchResultActionsObj.varifyBrandItems(Brand);  
+	}*/
+
+	@When("^Select the first shirt on item list$")
+	public void select_the_first_shirt_on_item_list() throws Throwable {
+		EbaySearchResultActionsObj.selectBigTallTee();  
+		Thread.sleep(2000);
+	}
+	/*@When("^Select the first shirt on the items$")
+	public void select_the_first_shirt_on_the_items() throws Throwable {
+	   */
+
+@When("^Select the first shoes$")
+public void select_the_first_shoes() throws Throwable {
+	 EbaySearchResultActionsObj.selectShoes();	
+	 Thread.sleep(3000);
+	 
 }
+
+}
+	
+	

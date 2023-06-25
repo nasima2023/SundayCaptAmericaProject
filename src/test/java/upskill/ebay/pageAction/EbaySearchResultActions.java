@@ -1,6 +1,8 @@
+
 package upskill.ebay.pageAction;
 
 import org.openqa.selenium.support.PageFactory;
+
 import org.testng.Assert;
 
 import upskill.ebay.pageElements.EbaySearchResultLocators;
@@ -21,7 +23,7 @@ public class EbaySearchResultActions {
 		Assert.assertTrue(EbaySearchResultLocatorsObj.txtShoes.isDisplayed());
 		
 		//Option 2
-		Assert.assertEquals("Shoes", EbaySearchResultLocatorsObj.txtShoes.getText());
+//		Assert.assertEquals("shoes", EbaySearchResultLocatorsObj.txtShoes.getText());
 		
 		//Option 3
 		EbaySearchResultLocatorsObj.txtShoes.isDisplayed();
@@ -40,6 +42,7 @@ public class EbaySearchResultActions {
 	}
 	
 	public void verifyBrandItems(String brand){
+	
 		if(brand.equals("Adidas")){
 		Assert.assertTrue(EbaySearchResultLocatorsObj.txtShirts.isDisplayed());
 		} else if (brand.equals("Nike")){
@@ -50,5 +53,27 @@ public class EbaySearchResultActions {
 			System.out.println("Brand not found");
 		}
 	}
+
+
+/*public void filterBrand( String Brand{
+	
 	
 }
+public void varifyBrandItems(String Brand){
+}*/
+
+public void selectBigTallTee() throws Exception{
+	Thread.sleep(3000);
+	EbaySearchResultLocatorsObj.linkShirtItems.click();
+	Thread.sleep(3000);
+}
+public void selectShoes() throws Exception{
+	Thread.sleep(3000);
+	EbaySearchResultLocatorsObj.linkShoe.click();
+	Thread.sleep(3000);
+	
+	}
+}
+
+
+

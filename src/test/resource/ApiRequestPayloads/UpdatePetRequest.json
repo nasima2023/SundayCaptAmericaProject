@@ -1,0 +1,18 @@
+{
+  "id": 13,
+  "category": {
+    "id": 12,
+    "name": "string"
+  },
+  "name": "liya",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}
